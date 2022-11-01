@@ -1,5 +1,5 @@
 {
-  "name": "project-name",
+  "name": "hello-world",
   "version": "0.0.1",
   "description": "",
   "author": "",
@@ -21,7 +21,7 @@
     "test:e2e": "jest --config ./test/jest-e2e.json",
     "prestart:prod": "npm run build",
     "postinstall": "npm run prestart:prod",
-    "heroku-postbuild": "NODE_ENV=dev npm --omit --no-shrinkwrap && npm run build"
+    "heroku-postbuild": "NODE_ENV=dev npm install --omit --no-shrinkwrap && npm run build"
   },
   "dependencies": {
     "@nestjs/common": "^9.0.0",
@@ -36,6 +36,7 @@
     "bcrypt": "^5.1.0",
     "class-transformer": "^0.5.1",
     "class-validator": "^0.13.2",
+    "mysql": "^2.18.1",
     "mysql2": "^2.3.3",
     "passport": "^0.6.0",
     "passport-jwt": "^4.0.0",

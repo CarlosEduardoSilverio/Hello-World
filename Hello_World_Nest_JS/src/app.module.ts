@@ -32,8 +32,7 @@ import { UsuarioModule } from './usuario/usuario.module';
       },
       synchronize: true,
       autoLoadEntities: true,
-    }),
-
+  }),
       PostagemModule,
       TemaModule,
       AuthModule,
